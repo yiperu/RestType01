@@ -38,7 +38,7 @@
 //    }
     
     // Prepare the URL
-    NSURL *url = [NSURL URLWithString:@"http://miApiRes/greeting"];
+    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/#"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         // This block is similar to lamda or closures
